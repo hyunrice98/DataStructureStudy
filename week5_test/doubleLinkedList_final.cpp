@@ -47,6 +47,7 @@ public:
 			DNode* temp = head->next;
 			head->next = temp->next;
 			temp->next->prev = head;
+			delete temp;
 		}
 	}
 
