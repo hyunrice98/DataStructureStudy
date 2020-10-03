@@ -66,6 +66,18 @@ int Stack::getSize() {
 	return this->top - 1;
 }
 
+void STACK::display() /*function to Display elements in the stack*/
+{
+if(top==-1)
+cout<<"\n\t\t\t      STACK UNDERFLOW!!!";
+else
+cout<<"\nElements in STACK are: ";
+for(int i=top;i>=0;i--)
+{
+cout<<" "<<data[i];
+}
+getch();
+}
 int main() {
 	Stack stack(30);
 	stack.push(1);
